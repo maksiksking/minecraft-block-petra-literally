@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bloc-petra-poroshenka",
+	"version": "${version}",
+	"name": "bloc-petra-poroshenka",
+	"description": "Poroshenko my beloved",
+	"authors": [
+		"Maksiks"
+	],
+	"contact": {
+		"homepage": "https://maksiksync.vercel.app",
+		"sources": "https://github.com/maksiksking/BlockPetra"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bloc-petra-poroshenka/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maksiks.bloc.Blocpetraporoshenka"
+		],
+		"fabric-datagen": [
+			"net.maksiks.bloc.BlocpetraporoshenkaDataGenerator"
+		],
+		"client": [
+			"net.maksiks.bloc.BlocpetraporoshenkaModClient"
+		]
+	},
+	"mixins": [
+		"bloc-petra-poroshenka.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
